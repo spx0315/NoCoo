@@ -5,9 +5,7 @@ import com.spx0315.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * Created by SunYi on 2016/2/1/0001.
- */
+
 @Service
 public class UserService {
     //自动注入一个userDao
@@ -35,7 +33,6 @@ public class UserService {
             return "密码错误";
         }
         else {
-
             user.setId(dbUser.getId());
             user.setCreateTime(dbUser.getCreateTime());
             return "登陆成功";

@@ -43,10 +43,7 @@ public class WebMvcConfig {
         return springTemplateEngine;
     }
 
-    /**
-     * 模板引擎解释器
-     * @return
-     */
+
     @Bean
     public ViewResolver viewResolver() {
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
